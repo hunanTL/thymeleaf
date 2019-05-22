@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <span th:text="hello"></span>
+  <hr/>
+<span th:text="${msg}"></span>
+<hr/>
+<input type="text" name="username" th:value="${username}"/>
+<hr/>
+<span th:text="${#strings.isEmpty(msg)}"></span>
+  <hr/>
+  <span th:text="${#strings.contains(msg,'h')}"></span>
+  <hr/>
+  <span th:text="${#strings.startsWith(msg,'h')}"></span>
+  <hr/>
+  <span th:text="${#strings.endsWith(msg,'h')}"></span>
+  <hr/>
+  <span th:text="${#strings.length(msg)}"></span>
+  <hr/>
+  <span th:text="${#strings.indexOf(msg,'h')}"></span>
+  <hr/>
+  <span th:text="${#strings.substring(msg,2)}"></span>
+  <hr/>
+  <span th:text="${#strings.toUpperCase(msg)}"></span>
+  <hr/>
+  <span th:text="${#strings.toLowerCase(msg)}"></span>
+  <hr/>
+  <span th:text="${#dates.format(key,'yyyy-MM-dd')}"></span>
+  <hr/>
+  <span th:text="${#dates.year(key)}"></span>
+  <hr/>
+  <span th:text="${#dates.month(key)}"></span>
+  <hr/>
+  <span th:text="${#dates.day(key)}"></span>
+</body>
+</html>
